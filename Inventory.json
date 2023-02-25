@@ -1,18 +1,39 @@
+{
+  "TyepesOfRice": [
 
-  [
     {
-      "name": "Rice",
-      "weight": "10",
-      "price": "100"
+      "name": "rice",
+      "weight": 2,
+      "price": 200
     },
     {
-      "name": "Pulses",
-      "weight": "20",
-      "price": "200"
+      "name": "basmati",
+      "weight": 3,
+      "price": 220
+    }
+  ],
+  "TypeOfPulses": [
+    {
+      "name": "dal",
+      "weight": 1,
+      "price": 210
     },
     {
-      "name": "Wheats",
-      "weight": "30",
-      "price": "300"
+      "name": "moong",
+      "weight": 2,
+      "price": 120
+    }
+  ],
+  "TypeOfWheat": [
+    {
+      "name": "Sharbati",
+      "weight": 6,
+      "price": 410
+    },
+    {
+      "name": "Gavran",
+      "weight": 4,
+      "price": 320
     }
   ]
+}
