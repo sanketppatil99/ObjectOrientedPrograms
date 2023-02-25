@@ -10,22 +10,20 @@ namespace InventoryManagement
 {
     public class FetchInvertory
     {
-        InventoryDetails Inventory = new InventoryDetails();
-        List<InventoryDetails> InventoryList = new List<InventoryDetails>();
-
-        public void convert(string jFilePath)
+        public InventoryDetails Read(string path)
         {
-            using (StreamReader reader = new StreamReader(jFilePath))
+            using (StreamReader file = new StreamReader(path))
             {
-                var json = reader.ReadToEnd();
-                var items = JsonConvert.DeserializeObject<List<InventoryDetails>>(json);
-                Console.WriteLine("Name weight Price Total value");
-
-                foreach (var item in items)
+                try
                 {
-                    double value = item.price * item.weight;
+                    string json = file.ReadToEnd();
+                    return JsonConvert.DeserializeObject<InventoryDetails>(json);
 
-                    Console.WriteLine(item.name + " " + item.weight + " " + item.price + " " + value);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    return null;
                 }
             }
         }
