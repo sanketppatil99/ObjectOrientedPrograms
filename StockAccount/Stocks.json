@@ -1,0 +1,19 @@
+{
+  "StockAccount": [
+    {
+      "shareName": "TCS",
+      "numberOfShare": 15,
+      "sharePrice": 230
+    },
+    {
+      "shareName": "IBM",
+      "numberOfShare": 9,
+      "sharePrice": 555
+    },
+    {
+      "shareName": "TATA",
+      "numberOfShare": 3,
+      "sharePrice": 143
+    }
+  ]
+}
